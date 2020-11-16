@@ -1,0 +1,87 @@
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+.middle {
+  width: 550px;
+  margin: 0 auto;
+  padding: 30px 50px;
+}
+.middle h1 {
+  text-align: center;
+  width: 100%;
+  font-size: 30px;
+}
+input {
+  border: 1px solid #949494;
+  border-radius: 5px;
+  padding: 15px 0;
+  font-size: 18px;
+  outline: none;
+  width: 100%;
+}
+label {
+  font-size: 14px;
+  color: #818181;
+  margin: 3px;
+  display: block;
+}
+.C-password {
+  margin-top: 20px;
+  position: relative;
+}
+.C-password .eyes {
+  position: absolute;
+  top: 40px;
+  right: 20px;
+}
+.C-password .eyes .iconfont {
+  font-size: 20px;
+}
+.C-username {
+  margin-top: 20px;
+}
+.C-forget a {
+  color: #407ab1;
+  font-size: 13px;
+  font-weight: 900;
+}
+.C-forget a:hover {
+  text-decoration: underline;
+  color: #000;
+}
+.C-submit {
+  margin-top: 20px;
+}
+.C-submit input {
+  font-size: 0.875rem;
+  text-decoration: none;
+  background-color: #407ab1;
+  color: #ffffff;
+  cursor: pointer;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #407ab1;
+}
+.login-foot {
+  margin-top: 40px;
+  padding-top: 50px;
+  border-top: 1px solid #ccc;
+}
+.login-foot h2 {
+  font-size: 30px;
+}
+.login-foot p:nth-of-type(1) {
+  color: #a3a3a3;
+  margin: 10px 0;
+  font-size: 13px;
+}
+.login-foot p:nth-of-type(2) a {
+  color: #407ab1;
+  font-size: 13px;
+  font-weight: 900;
+}
+.login-foot p:nth-of-type(2) a:hover {
+  text-decoration: underline;
+  color: #000;
+}

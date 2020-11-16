@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./iconfont/iconon/iconfont.css">
+    <link rel="stylesheet" href="./iconfont/close/iconfont.css">
+    <link rel="stylesheet" href="./iconfont/back/iconfont.css">
+
+    <script src="./js/html5shiv.js"></script>
+    <script src="./iconfont/iconon/iconfont.js"></script>
+    <script src="./iconfont/close/iconfont.js"></script>
+    <script src="./iconfont/back/iconfont.js"></script>
+    <script src="./js/jQuery.js"></script>
+    <!-- <script src="./js/jquery-tabs.js" type="module"></script> -->
+    <script src="./js/nav.js" type="module"></script>
+    <script src="./js/index.js" type="module"></script>
+
+    <!-- <script>
+        $(function(){
+            $('.tabs').tabs({
+                
+            });
+
+        });
+    </script> -->
+
+
+
+
+
+</head>
+
+<body>
+
+    <div class="bigbox wrapper1 clearfix">
+
+       
+            <header class="header ">
+
+
+                <!-- top部分 -->
+                <section class="top clearfix wrapper">
+
+
+
+                    <!-- logo -->
+                    <div class="logo left">
+                        <a href="./index.html">
+                            <img src="../img/ikea-logo.f88b07ceb5a8c356b7a0fdcc9a563d63.svg" alt="宜家" title="宜家">
+                            <span class="logo-text">宜家</span>
+                        </a>
+                    </div>
+
+
+                    <!-- 文字导航 -->
+                    <div class="nav left">
+                        <ul>
+
+                            <li>
+                                <a href="#">所有商品</a>
+                            </li>
+
+
+                            <li>
+                                <a href="#">房间</a>
+                            </li>
+
+
+                            <li>
+                                <a href="#">11-11 宜家购物节</a>
+                            </li>
+
+
+                            <li>
+                                <a href="#">服务</a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <!-- 搜索框 -->
+                    <div class="search left">
+                        <input type="search" name="q" maxlength="150" placeholder="你在找什么？">
+                        <a href="#"><span class="iconfont">&#xe619;</span></a>
+
+
+                    </div>
+
+                    <!-- 导航右边 -->
+                    <div class="shop right clearfix">
+                        <ul>
+                            <li><a href="./html/login.html">
+                                    <span class="iconfont">&#xe649;</span>
+                                </a></li>
+                            <li><a href="#">
+                                    <span class="iconfont">&#xe633;</span>
+                                </a></li>
+                            <li><a href="./html/shopcar.html">
+                                    <span class="iconfont">&#xe634;</span>
+                                </a></li>
+
+                        </ul>
+                    </div>
+            </header>
+
+
+            <!-- 侧边导航 -->
+
+
+
+            <input type="checkbox" id="menu">
+            <aside class="menu">
+
+
+                <div class="menu-top">
+                    <label for="menu">
+                        <span class="iconfont">&#xe66a;</span>
+                    </label>
+                    <a href="#">
+                        <img src="../img/ikea-logo.f88b07ceb5a8c356b7a0fdcc9a563d63.svg" alt="宜家" title="宜家">
+                    </a>
+                </div>
+
+                <div class="menu1">
+
+                    <div class="menu-first">
+                        <div class="menu-list">
+                            <ul>
+                                <li class="all-goods">
+                                    <a href="#">
+
+                                        所有商品
+
+                                    </a>
+
+                                </li>
+
+
+
+                                <li class="room">
+                                    <a href="#">房间</a>
+                                </li>
+                                <li class="shopping">
+                                    <a href="#">11-11 宜家购物节</a>
+                                </li>
+                                <li>
+                                    <a href="#">服务</a>
+                                </li>
+                                <li>
+                                    <a href="#">灵感</a>
+                                </li>
+                                <li>
+                                    <a href="#">新品</a>
+                                </li>
+                                <li>
+                                    <a href="#">宜家对公业务</a>
+                                </li>
+                                <li>
+                                    <a href="#">中文 | EN</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="menu-list2">
+                            <ul>
+                                <li>
+                                    <a href="#">客户服务</a>
+                                </li>
+                                <li>
+                                    <a href="#">宜家俱乐部</a>
+                                </li>
+                                <li>
+                                    <a href="#">宜家对公业务部</a>
+                                </li>
+                                <li>
+                                    <a href="#">本地商场</a>
+                                </li>
+                                <li>
+                                    <a href="#">可持续发展商品</a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <div class="menu-foot">
+
+                            <div class="menu-lang">
+                                <select>
+                                    <option>中文</option>
+                                    <option>English</option>
+                                </select>
+                            </div>
+                            <a href="#">
+                                <span class="iconfont">&#xe642;</span>
+                                更改国家/地区
+                            </a>
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- 隐藏——所有商品 -->
+
+
+                    <div class="hide-allgoods">
+                        <dl>
+                            <span class="iconfont btn">&#xe618;</span>
+                            <dt>所有商品</dt>
+                            <dd class="btn-jiaj hide">
+                                <a href="#">家具</a>
+                            </dd>
+                            <dd class="btn-chuw hide "><a href="#">储物和收纳</a></dd>
+                            <dd class="btn-chuang hide"><a href="#">床和床垫</a></dd>
+                            <dd class="btn-chug hide"><a href="#">橱柜和家电</a></dd>
+                            <dd><a href="#">婴儿和儿童</a></dd>
+                            <dd><a href="#">浴室产品</a></dd>
+                            <dd><a href="#">清洁晾晒</a></dd>
+                            <dd><a href="#">智能家居</a></dd>
+                            <dd><a href="#">装饰品</a></dd>
+                            <dd><a href="#">餐具和厨具</a></dd>
+                            <dd><a href="#">纺织品</a></dd>
+                            <dd><a href="#">地毯, 门垫和地板</a></dd>
+                            <dd><a href="#">更多商品</a></dd>
+                        </dl>
+                    </div>
+
+
+
+
+                    <!-- 隐藏——房间 -->
+
+                    <div class="hide-room">
+                        <dl class="clearfix">
+                            <span class="iconfont btn-room">&#xe618;</span>
+                            <dt>房间</dt>
+                            <dd>
+                                <a href="#">
+                                    <img src="./img/ke4-ting1-186c4b3f9a51eb01b6507f4d4613ec18.jpg" alt="">
+                                    <span>卧室</span>
+                                </a>
+                            </dd>
+                            <dd>
+                                <a href="#">
+                                    <img src="./img/ke4-ting1-186c4b3f9a51eb01b6507f4d4613ec18.jpg" alt="">
+                                    <span>卧室</span>
+                                </a>
+                            </dd>
+
+
+                            <dd>
+                                <a href="#">
+                                    <img src="./img/ke4-ting1-186c4b3f9a51eb01b6507f4d4613ec18.jpg" alt="">
+                                    <span>卧室</span>
+                                </a>
+                            </dd>
+                            <dd>
+                                <a href="#">
+                                    <img src="./img/ke4-ting1-186c4b3f9a51eb01b6507f4d4613ec18.jpg" alt="">
+                                    <span>卧室</span>
+                                </a>
+                            </dd>
+
+
+                            <dd>
+                                <a href="#">
+                                    <img src="./img/ke4-ting1-186c4b3f9a51eb01b6507f4d4613ec18.jpg" alt="">
+                                    <span>卧室</span>
+                                </a>
+                            </dd>
+                            <dd>
+                                <a href="#">
+                                    <img src="./img/ke4-ting1-186c4b3f9a51eb01b6507f4d4613ec18.jpg" alt="">
+                                    <span>卧室</span>
+                                </a>
+                            </dd>
+
+
+                            <dd>
+                                <a href="#">
+                                    <img src="./img/ke4-ting1-186c4b3f9a51eb01b6507f4d4613ec18.jpg" alt="">
+                                    <span>卧室</span>
+                                </a>
+                            </dd>
+                            <dd>
+                                <a href="#">
+                                    <img src="./img/ke4-ting1-186c4b3f9a51eb01b6507f4d4613ec18.jpg" alt="">
+                                    <span>卧室</span>
+                                </a>
+                            </dd>
+
+
+
+                            <dd>
+                                <a href="#">
+                                    <img src="./img/ke4-ting1-186c4b3f9a51eb01b6507f4d4613ec18.jpg" alt="">
+                                    <span>卧室</span>
+                                </a>
+                            </dd>
+                            <dd>
+                                <a href="#">
+                                    <img src="./img/ke4-ting1-186c4b3f9a51eb01b6507f4d4613ec18.jpg" alt="">
+                                    <span>卧室</span>
+                                </a>
+                            </dd>
+
+
+                            <dd>
+                                <a href="#">
+                                    <img src="./img/ke4-ting1-186c4b3f9a51eb01b6507f4d4613ec18.jpg" alt="">
+                                    <span>卧室</span>
+                                </a>
+                            </dd>
+
+                        </dl>
+
+                    </div>
+
+
+                    <!-- 隐藏——11-11宜家购物节 -->
+                    <div class="hide-shopping">
+                        <dl>
+                            <span class="iconfont btn-shopping">&#xe618;</span>
+                            <dt>11-11宜家购物节</dt>
+                            <dd><a href="#">450+精选产品低至5折</a></dd>
+                            <dd><a href="#">沙发特惠 指定款88折</a></dd>
+                            <dd><a href="#">指定同类商品 3件88折优惠</a></dd>
+                            <dd><a href="#">更低价格</a></dd>
+                            <dd><a href="#">超值低价</a></dd>
+                            <dd><a href="#">轻松收纳节</a></dd>
+                        </dl>
+                    </div>
+
+
+
+
+                    <!-- 二级导航 ——家具-->
+                    <div class="subnav-jiaj subnav">
+                        <dl>
+                            <dt>家具</dt>
+                            <dd><a href="#">浏览所有商品</a></dd>
+                            <dd><a href="#">扶手椅和贵妃椅</a></dd>
+                            <dd><a href="#">沙发</a></dd>
+                            <dd><a href="#">衣柜</a></dd>
+                            <dd><a href="#">书柜和搁架单元</a></dd>
+                            <dd><a href="#">电视柜及视听类家具</a></dd>
+                            <dd><a href="#">抽屉柜和抽屉框架</a></dd>
+                            <dd><a href="#">餐边柜和长几</a></dd>
+                            <dd><a href="#">橱柜和展示柜</a></dd>
+                            <dd><a href="#">床</a></dd>
+                            <dd><a href="#">桌子-书桌和餐桌</a></dd>
+                            <dd><a href="#">吧台家具</a></dd>
+                            <dd><a href="#">咖啡馆家具</a></dd>
+                            <dd><a href="#">椅子</a></dd>
+                            <dd><a href="#">户外家具</a></dd>
+                            <dd><a href="#">推车</a></dd>
+                            <dd><a href="#">房间隔断</a></dd>
+                            <dd><a href="#">婴儿家具</a></dd>
+
+                            <dd><a href="#">咖啡馆家具</a></dd>
+                            <dd><a href="#">椅子</a></dd>
+                            <dd><a href="#">户外家具</a></dd>
+                            <dd><a href="#">推车</a></dd>
+                            <dd><a href="#">房间隔断</a></dd>
+                            <dd><a href="#">婴儿家具</a></dd>
+                        </dl>
+
+                    </div>
+
+
+
+                    <!-- 二级导航——储物 -->
+                    <div class="subnav-chuw subnav">
+                        <dl>
+                            <dt>储物和收纳</dt>
+                            <dd><a href="#">浏览所有商品</a></dd>
+                            <dd><a href="#">储物系统
+                            </a></dd>
+                            <dd><a href="#">衣柜</a></dd>
+                            <dd><a href="#">抽屉柜和抽屉框架</a></dd>
+                            <dd><a href="#">书柜和搁架单元</a></dd>
+                            <dd><a href="#">橱柜和展示柜</a></dd>
+                            <dd><a href="#">电视柜及视听类家具</a></dd>
+                            <dd><a href="#">餐边柜和长几</a></dd>
+                            <dd><a href="#">鞋柜和衣帽架</a></dd>
+                            <dd><a href="#">挂钩和墙面收纳件</a></dd>
+                            <dd><a href="#">小型储物产品</a></dd>
+                            <dd><a href="#">推车</a></dd>
+                            <dd><a href="#">包袋</a></dd>
+                            <dd><a href="#">搬家用品</a></dd>
+                           
+                        </dl>
+
+                    </div>
+
+
+                    <!-- 二级导航——床和床垫 -->
+                    <div class="subnav-chuang subnav">
+                        <dl>
+                            <dt>床和床垫</dt>
+                            <dd><a href="#">浏览所有商品</a></dd>
+                            <dd><a href="#"> 床 </a></dd>
+                            <dd><a href="#">床垫</a></dd>
+                            <dd><a href="#">床头板</a></dd>
+                            <dd><a href="#">床头柜</a></dd>
+                            <dd><a href="#">床板条</a></dd>
+                            <dd><a href="#">床底收纳</a></dd>
+                            <dd><a href="#">卧室纺织品</a></dd>
+                    </dl>
+
+                    </div>
+
+
+                    <!-- 二级导航——橱柜和家电 -->
+                    <div class="subnav-chug subnav">
+                        <dl>
+                            <dt>橱柜和家电</dt>
+                            <dd ><a href="#">浏览所有商品</a></dd>
+                            <dd><a href="#"> 厨房厨柜系列</a></dd>
+                            <dd><a href="#">厨房橱柜和前板</a></dd>
+                            <dd><a href="#">内部配件</a></dd>
+                            <dd><a href="#">厨房电器</a></dd>
+                            <dd><a href="#">厨房操作台面</a></dd>
+                            <dd><a href="#">厨房水龙头和水槽</a></dd>
+                            <dd><a href="#">推车和岛台</a></dd>
+                            <dd><a href="#">拉手和拉钮</a></dd>
+                            <dd><a href="#">墙面板</a></dd>
+                            <dd><a href="#">厨房壁式储物装置</a></dd>
+                            <dd><a href="#">厨房照明</a></dd>
+                            <dd><a href="#">食品贮藏室</a></dd>
+
+                    </dl>
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                </div>
+
+       
+
+
+        </aside>
+
+
+
+
+        <!-- 左侧布局 -->
+        <div class="left clearfix leftbox">
+
+
+            <label id='sideMenuControl' for='menu'>
+
+                <span class="iconfont">&#xeaf1;</span>
+
+            </label>
+
+
+        </div>
+
+
+
+
+
+
+
+        </section>
+
+
+        <!-- 主要内容——第一部分 -->
+
+        <div class="wrapper1 clearfix">
+
+
+            <div class="main wrapper clearfix">
+                <h1>11-11 宜家购物节</h1>
+                <div class="banner">
+                    <a href="#">
+                        <img src="../img/banner.jpg" alt="">
+
+                        <span>
+                            <i>线上线下同庆，最后4天！ </i>
+                            <i class="iconfont">&#xe62b;</i>
+                        </span>
+
+                    </a>
+
+                </div>
+
+            </div>
+        </div>
+        <!-- 主要内容——购物节限时福利 -->
+        <div class="wrapper1 clearfix">
+            <div class="main2 wrapper clearfix">
+                <h1>购物节限时福利！</h1>
+
+                <ul class="clearfix list">
+                    <!-- <a href="#">
+                        <li>
+                            <img src="../img/strandmon-si-jia-meng-kao-bei-yi-si-ke-te-bo-dan-mi-se__0513996_PE639275_S5.JPG"
+                                alt="">
+                            <p>STRANDMON 斯佳蒙</p>
+                            <p>靠背椅</p>
+                            <p><sup>¥</sup> 1,299</p>
+                        </li>
+                    </a>
+
+
+                    <a href="#">
+                        <li>
+                            <img src="../img/kvistbro-kui-si-bo-chu-wu-zhuo-qian-hui-lu__0816804_PE773686_S5.JPG"
+                                alt="">
+                            <p>KVISTBRO 魁思伯</p>
+                            <p>储物桌, 44厘米</p>
+                            <p><sup>¥</sup> 129</p>
+                        </li>
+                    </a>
+
+
+                    <a href="#">
+                        <li>
+                            <img src="../img/hemnes-han-ni-si-zuo-wo-liang-yong-chuang-dai-3ge-chou-ti-2ge-chuang-dian-bai-se-hu-si-wei-qia-ying-xing__0636371_PE697851_S5.JPG"
+                                alt="">
+                            <p>HEMNES 汉尼斯</p>
+                            <p>坐卧两用床,带3个抽屉/2个床垫,80x200厘米</p>
+                            <p><sup>¥</sup>3397</p>
+                        </li>
+                    </a>
+
+                    <a href="#">
+                        <li>
+                            <img src="../img/billy-bi-li-bo-li-men-shu-ju-shen-hong-se__0625531_PE692337_S5.JPG" alt="">
+                            <p>BILLY 毕利</p>
+                            <p>玻璃门书柜,80x30x202厘米</p>
+                            <p><sup>¥</sup> 1299</p>
+                        </li>
+                    </a>-->
+
+
+
+                     <a href="#">
+                        <li>
+                            <img data-original="../img/odger-ao-de-ge-yi-zi-bai-se-mi-huang-se__0727334_PE735606_S5.JPG" alt="" class="lazy">
+                            <p>ODGER 奥德格</p>
+                            <p>椅子</p>
+                            <p><sup>¥</sup> 499</p>
+                        </li>
+                    </a> 
+
+
+                    <a href="#">
+                        <li>
+                            <img data-original="../img/halsted-ha-si-tai-men-dian-hui-se-lan-se__0624591_PE691911_S5.JPG" alt="" class="lazy">
+                            <p>HALSTED 哈斯泰</p>
+                            <p>门垫,44x66厘米</p>
+                            <p><sup>¥</sup>29.9</p>
+                        </li>
+                    </a>
+
+
+                    <a href="#">
+                        <li>
+                            <img data-original="../img/raskog-la-si-ke-shou-tui-che-bai-se__0503386_PE632627_S5.JPG" alt="" class="lazy">
+                            <p>RÅSKOG 拉斯克</p>
+                            <p>手推车,35x45x78厘米</p>
+                            <p><sup>¥</sup>249</p>
+                        </li>
+                    </a>
+
+                    <a href="#">
+                        <li>
+                            <img data-original="../img/malm-ma-er-mu-4ti-ju-bai-se__0484879_PE621344_S5.JPG" alt="" class="lazy">
+                            <p>MALM 马尔姆</p>
+                            <p>4屉柜,80x100厘米</p>
+                            <p><sup>¥</sup>599</p>
+                        </li>
+                    </a> 
+
+                </ul>
+
+                <div class="main2-card">
+                    <h1>预约宜家全屋设计，即享定金3倍“膨胀”！</h1>
+                    <p>2020.10.21-11.12，预约宜家全屋设计服务并支付定金268元，11.13-12.13 付款可抵1072元！</p>
+
+                    <div>
+                        <a href="#">
+                            立即预约 / 了解详情
+                        </a>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+        </div>
+
+
+        <!-- 主要内容——3大特惠 -->
+        <div class="wrapper1 clearfix">
+
+            <div class="main3 wrapper clearfix">
+                <h1>3大特惠，限时抢购！</h1>
+
+                <dl>
+                    <dt><a href="#">
+                            <img data-original="../img/8b9789a7bd8927450268b4d8bbc17eed.jpg" alt="" class="lazy">
+                        </a></dt>
+                    <dd><a href="#">
+                            450+款精选产品，低至5折!
+                        </a></dd>
+                    <dd><a href="#">
+                            <span class="iconfont">&#xe62b;</span>
+                        </a></dd>
+                </dl>
+
+                <dl>
+                    <dt><a href="#">
+                            <img data-original="../img/023d171db54b7682e85008bb186893d6.jpg" alt="" class="lazy">
+                        </a></dt>
+                    <dd><a href="#">
+                            2大经典沙发系列，指定款88折优惠！
+                        </a></dd>
+                    <dd><a href="#">
+                            <span class="iconfont">&#xe62b;</span>
+                        </a></dd>
+                </dl>
+                <dl>
+                    <dt><a href="#">
+                            <img data-original="../img/3a2b57f15529e6f9661db515d9c1bfdd.jpg" alt="" class="lazy">
+                        </a></dt>
+                    <dd><a href="#">
+                            16类家居用品，同类商品任意3件及以上88折！
+                        </a></dd>
+                    <dd><a href="#">
+                            <span class="iconfont">&#xe62b;</span>
+                        </a></dd>
+                </dl>
+
+
+            </div>
+
+        </div>
+
+        <!-- 主要内容——舒适生活 -->
+        <div class="wrapper1 clearfix">
+            <div class="main4 wrapper clearfix">
+                <h1>舒适空间, 为生活充电</h1>
+                <dl>
+                    <dt><a href="#">
+                            <img data-original="../img/1097935939e27dc5064ac99cb1f9a8dc.jpg" alt="" class="lazy">
+                        </a></dt>
+                    <dd><a href="#">
+                            卧室
+
+                        </a></dd>
+                    <dd><a href="#">
+                            <span class="iconfont">&#xe62b;</span>
+                        </a></dd>
+                </dl>
+                <dl>
+                    <dt><a href="#">
+                            <img data-original="../img/be366272946874ad4a171c981796ef67.jpg" alt="" class="lazy">
+                        </a></dt>
+                    <dd><a href="#">
+                            客厅
+
+                        </a></dd>
+                    <dd><a href="#">
+                            <span class="iconfont">&#xe62b;</span>
+                        </a></dd>
+                </dl>
+                <dl>
+                    <dt><a href="#">
+                            <img data-original="../img/b88f285b7c15dc0a443847692d3bfd98.jpg" alt="" class="lazy">
+                        </a></dt>
+                    <dd><a href="#">
+                            厨房
+
+                        </a></dd>
+                    <dd><a href="#">
+                            <span class="iconfont">&#xe62b;</span>
+                        </a></dd>
+                </dl>
+
+
+
+                <dl>
+                    <dt><a href="#">
+                            <img data-original="../img/c3ab5db9fa7f0cfb52ee887919e67361.jpg" alt="" class="lazy">
+                        </a></dt>
+                    <dd><a href="#">
+                            餐厅
+
+                        </a></dd>
+                    <dd><a href="#">
+                            <span class="iconfont">&#xe62b;</span>
+                        </a></dd>
+                </dl>
+                <dl>
+                    <dt><a href="#">
+                            <img data-original="../img/2953d1c3658513d3789cd5c9fff71118.jpg" alt="" class="lazy">
+                        </a></dt>
+                    <dd><a href="#">
+                            儿童房
+
+                        </a></dd>
+                    <dd><a href="#">
+                            <span class="iconfont">&#xe62b;</span>
+                        </a></dd>
+                </dl>
+                <dl>
+                    <dt><a href="#">
+                            <img data-original="../img/1097935939e27dc5064ac99cb1f9a8dc.jpg" alt="" class="lazy">
+                        </a></dt>
+                    <dd><a href="#">
+                            书房和办公室
+
+                        </a></dd>
+                    <dd><a href="#">
+                            <span class="iconfont">&#xe62b;</span>
+                        </a></dd>
+                </dl>
+
+                <dl>
+                    <dt><a href="#">
+                            <img data-original="../img/ec97ac3eee8a0e848f2534d9dd9ac949.jpg" alt="" class="lazy">
+                        </a></dt>
+                    <dd><a href="#">
+                            浴室
+
+                        </a></dd>
+                    <dd><a href="#">
+                            <span class="iconfont">&#xe62b;</span>
+                        </a></dd>
+                </dl>
+
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+        <!-- 主要内容——更多必买好物-->
+        <div class="wrapper1 clearfix">
+            <div class="more-shop wrapper clearfix">
+                <h1>更多必买好物</h1>
+
+                <div class="ms-listbox">
+                <ul class="ms-list clearfix">
+                    <li><a href="#">
+                            <img src="../img/968a6a18ba8e0231cef7e49fabf504a1.jpg" alt="" class="lazy">
+                            <div class="moreshop-text">
+                                <span>网红口碑榜</span>
+                            </div>
+                        </a></li>
+
+                    <li><a href="#">
+                            <img src="../img/6fa6a952d01c7efa84142923973ba0dd.jpg" alt="" class="lazy">
+                            <div class="moreshop-text">
+                                <span>接地气好物</span>
+                            </div>
+                        </a></li>
+
+                    <li><a href="#">
+                            <img src="../img/6ae5002bc2c8763d377af16168d00c07.jpg" alt="" class="lazy">
+                            <div class="moreshop-text">
+                                <span>好物更实惠</span>
+                            </div>
+                        </a></li>
+
+                    <li><a href="#">
+                            <img data-original="../img/b575bae94e2dd7d08219fbb164a403ba.jpg" alt="" class="lazy">
+                            <div class="moreshop-text">
+                                <span>发现新品</span>
+                            </div>
+                        </a></li>
+
+
+                        <li><a href="#">
+                            <img data-original="../img/b575bae94e2dd7d08219fbb164a403ba.jpg" alt="" class="lazy">
+                            <div class="moreshop-text">
+                                <span>发现新品</span>
+                            </div>
+                        </a></li>
+
+
+                     
+
+
+                </ul>
+            </div>
+
+
+            </div>
+        </div>
+
+
+
+        <!-- 主要内容——新品发布 -->
+        <div class="wrapper1 clearfix">
+            <div class="new-goods wrapper clearfix">
+                <h1>新品发布</h1>
+                <div class="new-bg">
+                    <img src="../img/96f976f156655c99e641fa7991457f00.jpg" alt="" class="lazy">
+                    <div class="new-text">
+                        <span>
+                            RÅVAROR 罗瓦露 ——灵活多功能的家具系列，与你一起迎接生活的变迁
+                        </span>
+                        <a href="#">
+                            <i class="iconfont">&#xe62b;</i>
+                        </a>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+    </div>
+
+    <!-- footer -->
+
+    <footer>
+        <div class="wrapper1 clearfix">
+
+            <div class="foot clearfix wrapper">
+                <ul>
+                    <li>IKEA Family 宜家俱乐部</li>
+                    <li>
+                        加入宜家俱乐部，即可享受更多会员福利，更有不期而至的小惊喜等着你！
+                        <a href="#">了解更多</a>
+
+                    </li>
+                    <li>
+                        <a href="#">
+
+                            立即加入
+
+                        </a>
+                    </li>
+                </ul>
+
+
+
+                <ul>
+                    <li>
+                        <div class="bt">常用链接</div>
+                    </li>
+                    <li>
+                        <a href="#">《家居指南》及手册 </a><br>
+                        <a href="#">宜家家居APP</a><br>
+                        <a href="#">本地商场</a><br>
+                        <a href="#">在线设计工具</a><br>
+                        <a href="#">兑换优惠券</a><br>
+                        <a href="#">宜家俱乐部</a><br>
+                        <a href="#">宜家对公业务</a><br>
+                        <a href="#">瑞典美食</a>
+
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <div class="bt">客户服务</div>
+                    </li>
+                    <li>
+                        <a href="#">我们的服务</a><br>
+                        <a href="#">联系我们</a><br>
+                        <a href="#">网上商城配送范围</a><br>
+                        <a href="#">常见问题</a><br>
+                        <a href="#">退货政策</a><br>
+                        <a href="#">品质保证</a><br>
+                        <a href="#">购物指南</a><br>
+
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <div class="bt">关于宜家</div>
+                    </li>
+                    <li>
+                        <a href="#">这就是宜家</a><br>
+                        <a href="#">民主设计</a><br>
+                        <a href="#">可持续的日常生活</a><br>
+                        <a href="#">社区参与</a><br>
+                        <a href="#">加入我们</a><br>
+                        <a href="#">IKEA Foundation</a>
+
+
+
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <div class="bt">宜家新闻</div>
+                    </li>
+                    <li>
+                        <a href="#">新闻室</a><br>
+                        <a href="#">新闻联络</a><br>
+                        <a href="#">商品召回</a><br>
+                        <a href="#">牢牢固定！</a>
+
+                    </li>
+                </ul>
+
+
+
+
+
+
+
+            </div>
+
+            <div class="foot-icon wrapper">
+                <ul>
+                    <li><a href="#">
+                            <span class="iconfont">&#xe608;</span>
+                        </a></li>
+                    <li><a href="#">
+                            <span class="iconfont">&#xe63e;</span>
+                        </a></li>
+                    <li><a href="#">
+                            <span class="iconfont">&#xe8c1;</span>
+                        </a></li>
+                </ul>
+
+
+            </div>
+
+
+
+            <div class="foot-f wrapper clearfix">
+                <div class="footer-copy">
+                    <p>© Inter IKEA Systems B.V 1999-2020</p>
+                </div>
+                <div class="footer-list">
+                    <ul class="clearfix">
+                        <li><a href="#">沪ICP 备17055232 号-1</a></li>
+                        <li><a href="#">沪公网安备 31010402001069号</a></li>
+                        <li><a href="#">上海工商</a></li>
+                        <li><a href="#">使用条款</a></li>
+                        <li><a href="#">缺陷披露政策</a></li>
+                        <li><a href="#">隐私政策</a></li>
+
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+    </footer>
+
+
+
+</body>
+
+</html>

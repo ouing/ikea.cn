@@ -1,0 +1,16 @@
+.shopcar {
+  margin-left: 100px;
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+.shopcar p {
+  line-height: 25px;
+  font-size: 14px;
+}
+.shopcar p a {
+  color: #407ab1;
+  text-decoration: underline;
+}
+.shopcar p a:hover {
+  color: #000;
+}

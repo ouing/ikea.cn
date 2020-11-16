@@ -1,0 +1,79 @@
+@charset "utf-8";
+body, ol, ul, li, h1, h2, h3, h4, h5, h6, p, th, td, dl, dd, form, fieldset, legend, input, textarea, select {
+    margin: 0;
+    padding: 0
+}
+
+body {
+    font-family: "微软雅黑";
+    
+}
+
+/* html{
+    height: 100%;
+} */
+
+
+a, u, ins {
+    text-decoration: none;
+}
+
+b, strong {
+    font-weight: normal
+}
+
+i, em {
+    font-style: normal
+}
+
+ul, ol, li {
+    list-style: none;
+}
+
+img {
+    display: block;
+    border: 0;
+}
+
+input,select{
+    outline: none;
+    border: 0;
+}
+
+body {
+    font-size: 12px;
+}
+
+
+
+
+.clearfix:after{
+    content:"";
+    display:block;
+    clear:both;
+    height:0;
+    overflow:hidden;
+    visibility:hidden
+}
+
+.wrapper1{
+    width: 1240px;
+    margin: 0 auto;
+    /* background: khaki;   */
+  
+}
+
+.wrapper{
+    width: 1126px;
+    float: right;
+    /* background: lightcoral; */
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
